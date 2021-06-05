@@ -16,5 +16,11 @@ Simple lambda function with API gateway.
 1. Example curl cmd.
 
     ```shell
-    curl -v -X GET https://<api-gateway-url>/prod/?<number>`
+    curl -v -X GET https://<api-gateway-url>/prod/hello`
     ```
+
+## Destroy
+
+```shell
+terraform destroy
+```
