@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+  pull-request
+  
+jobs:
+  test:
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@v2
+        
+      - name: Echo
+        run: echo "otp"
