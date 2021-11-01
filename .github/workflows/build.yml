@@ -4,10 +4,13 @@ on:
   push:
     branches:
       - master
-  pull-request
+  pull_request:
+    branches: 
+      - master
   
 jobs:
   test:
+    runs-on: ubuntu-latest
     steps:
       - name: Check out this repository
         uses: actions/checkout@v2
