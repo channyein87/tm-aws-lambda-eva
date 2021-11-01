@@ -3,10 +3,10 @@ name: Build
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches: 
-      - master
+      - main
   
 jobs:
   test:
@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Echo
-        run: echo "otp"
+        run: echo "echo otp"
